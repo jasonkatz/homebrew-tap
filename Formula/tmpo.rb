@@ -1,45 +1,45 @@
 class Tmpo < Formula
   desc "Autonomous software delivery pipeline"
   homepage "https://github.com/jasonkatz/tmpo"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpo-darwin-arm64"
-      sha256 "5b48bc04ae888c97a3dad61026a18bd95a19b2bb721e38c8e3784d4e7748ec57"
+      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpo-darwin-arm64"
+      sha256 "ad0f19943242ff2b89e77b7411b17d808ae3b606dd67395fcec48b6ca151cb27"
 
       resource "tmpod" do
-        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpod-darwin-arm64"
-        sha256 "a6967ba8e41e5fa87b82c194ea01cd4ce73e64f4b19c7776174686798ec66bbf"
+        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpod-darwin-arm64"
+        sha256 "4252ba176d7a69236d07c6fa40374cc90851babc1d750f7eef571c9da217d1eb"
       end
     else
-      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpo-darwin-x64"
-      sha256 "a7014e343d864651526050e5a3dc7bf5e0b50851924aedaf49d3a4bc1690c0e9"
+      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpo-darwin-x64"
+      sha256 "d21b7752495180ee6dc4bbd23485fc80a83ff79076ce747ebd7ea0ee70fae078"
 
       resource "tmpod" do
-        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpod-darwin-x64"
-        sha256 "34280362ece6b72022894ec2be69cbf23b14720b3c89a72c829b4cc514df0a4a"
+        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpod-darwin-x64"
+        sha256 "1d0ea26adaae9044fda58349253198bdf0e89e41800877478731992e960d8340"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpo-linux-arm64"
-      sha256 "abfcc389371ad4c57f8b01be63833e3ad126839c594c537a88f5397418b47fd2"
+      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpo-linux-arm64"
+      sha256 "7fd495b2669f96bbae21467ef6a2f6d98682949b1bac960ced81969accc6932b"
 
       resource "tmpod" do
-        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpod-linux-arm64"
-        sha256 "91862c5dd54e6c5542e7b6d232bc0ea6dde5d39c89ab607c1a8ea7ce1a6988a9"
+        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpod-linux-arm64"
+        sha256 "6a70af81c640a3f1ab64442b6727f8df5442f4904716aa7a8c840fe5bee3b4c5"
       end
     else
-      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpo-linux-x64"
-      sha256 "ffd104c1793f355e3d3bdaf79e7e3f5dd5475f65da2817b584e9f781d5e9e79c"
+      url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpo-linux-x64"
+      sha256 "eea63447280d9d7778c09bdcfb408c8b0f570ea7db5a640a2e5ad950e5106b6d"
 
       resource "tmpod" do
-        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.0/tmpod-linux-x64"
-        sha256 "5832e314df40907ad0ea6bcafacc8c08f811670adaf973836b515035ec32a26d"
+        url "https://github.com/jasonkatz/tmpo/releases/download/v0.2.1/tmpod-linux-x64"
+        sha256 "ccacc41702635bc890e007f3668741d65fef2a4253ce1dfe6e4d2a4227bc3809"
       end
     end
   end
